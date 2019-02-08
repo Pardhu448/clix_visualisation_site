@@ -1,0 +1,25 @@
+---
+layout: projectpages
+title: "Tools Data Visualisation"
+author: "partha"
+categories: visualisationtype
+caption: Explore data related to tools section of platform
+tags: [tools, visualisation]
+image:
+      feature : visuals_ss.png	
+---
+ Project to build a system to predict pest possibilities using pest data and local data available. With the help of WOTR, would like to make it agroecologically compatible by including farmers as active participants and stakeholders.
+
+<div>
+	{% for post in site.categories.visuals %}
+	<a style = "text-decoration: none" href={{site.github}}{{post.url}}>
+		<figure>
+		 <img src = {{site.github.url}}/images/{{post.image.feature}} alt = "image">
+		 <figcaption>
+                      {{post.caption}}
+	         </figcaption>	 
+		</figure>
+
+        </a>
+	{% endfor %}
+</div>

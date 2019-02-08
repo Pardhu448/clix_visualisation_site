@@ -1,0 +1,172 @@
+<head>
+
+  <title>
+    
+      
+    
+  </title>
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+
+<div class="container">
+
+<header class="site-header">
+  <h3 class="site-title">
+    <a href="/">Clix Data Visualization</a>
+  </h3>
+  <nav class="menu-list">
+    
+      <a href="/pages/about.html" class="menu-link">About</a>
+    
+      <a href="/pages/visualisations.html" class="menu-link">Visualisations</a>
+    
+      <a href="/pages/documentation.html" class="menu-link">Documentation</a>
+    
+      <a href="/pages/faq.html" class="menu-link">FAQ</a>
+    
+      <a href="/pages/contact.html" class="menu-link">Contact</a>
+    
+
+    
+      <a href="https://www.facebook.com" class="menu-link"><i class="fa fa-facebook" aria-hidden="true" target="_blank"></i></a>
+    
+      <a href="https://linkedin.com" class="menu-link"><i class="fa fa-linkedin" aria-hidden="true" target="_blank"></i></a>
+    
+  </nav>
+
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <div class="dropdown-content">
+      
+        <a href="/pages/about.html" class="menu-link">About</a>
+      
+        <a href="/pages/visualisations.html" class="menu-link">Visualisations</a>
+      
+        <a href="/pages/documentation.html" class="menu-link">Documentation</a>
+      
+        <a href="/pages/faq.html" class="menu-link">FAQ</a>
+      
+        <a href="/pages/contact.html" class="menu-link">Contact</a>
+      
+
+      
+        <a href="https://www.facebook.com" class="menu-link"><i class="fa fa-facebook" aria-hidden="true" target="_blank"></i></a>
+      
+        <a href="https://linkedin.com" class="menu-link"><i class="fa fa-linkedin" aria-hidden="true" target="_blank"></i></a>
+      
+    </div>
+  </div>
+
+</header>
+  
+  
+  <div class="page-title">
+  <h2 style = "text-align : left">
+    
+  </h2>
+</div>
+
+<div class = "container">
+  
+  <section class="content wrap documentationContent">
+    <div class="nav-docs">
+	<div class="nav-docs-section">
+		<h3><a href="/pages/documentation.html#getting-started">Getting Started</a></h3>
+			<li><a href="/pages/documentation.html#tools_data_vis">Tools Data Visualisation</a>
+			<li><a href="/pages/documentation.html#installing-python-3">1.1.2 Installing Python 3</a>
+			<li><a href="/pages/documentation.html#interactive-sessions">1.1.3 Interactive Sessions</a>
+			<li><a href="/pages/documentation.html#first-example">1.1.4 First Example</a>
+			<li><a href="/pages/documentation.html#errors">1.1.5 Errors</a>
+	</div>
+    </div>
+
+    <div class="inner-content">
+      <h1>Introduction</h1>
+         <div class="section" id="getting-started">
+          <h2>Getting Started</h2>
+             <p>This page contains doumentation of methodology and processes involved in generating visualisation in this website.
+		We have a section for each type/super-set of visualisations and sub-sections for individual visualisations.
+	        This makes it easier to navigate through visualisations and also having all the documentation in a single page gives
+	        context or interlinks between different data visualisations.</p>
+
+	        <div class="section" id="tools_data_vis">
+		     <h3> Tools Data Visualisation</h3> 
+            		
+		        <blockquote class="epigraph">
+			 <p>A language isn't something you learn so much as something you join.</p>
+			 <p class="attribution">—<a class="reference external" href="http://arikaokrent.com/">Arika Okrent</a></p>
+	   		</blockquote>
+                         
+
+   	   	       <p>In order to define computational processes, we need a programming language;
+	   		  preferably one that many humans and a great variety of computers can all
+	   		  understand. In this text, we will work primarily with 
+			  the <a class="reference external" href="http://docs.python.org/py3k/">Python</a> language.</p>
+	   		  
+	   		  <p>Python is a widely used programming language that has recruited enthusiasts from
+	   		  many professions: web programmers, game engineers, scientists, academics, and
+	   		  even designers of new programming languages. When you learn Python, you join a
+	   		  million-person-strong community of developers. Developer communities are
+	   		  tremendously important institutions: members help each other solve problems,
+	   		  share their projects and experiences, and collectively develop software and
+	   		  tools.  Dedicated members often achieve celebrity and widespread esteem for
+	   		  their contributions.</p>
+	   		  
+	   		  <p>The Python language itself is the product of a <a class="reference external" href="http://www.python.org/psf/members/">large volunteer community</a> that prides itself on the <a class="reference external" href="http://python.org/community/diversity/">diversity</a> of its contributors. The language
+	   		  was conceived and first implemented by <a class="reference external" href="http://en.wikipedia.org/wiki/Guido_van_Rossum">Guido van Rossum</a> in the late 1980's.
+	   		  The first chapter of his <a class="reference external" href="http://docs.python.org/py3k/tutorial/appetite.html">Python 3 Tutorial</a> explains why Python is so
+	   		  popular, among the many languages available today.</p>
+	   		  <p>Python excels as an instructional language because, throughout its history,
+	   		  Python's developers have emphasized the human interpretability of Python code,
+	   		  reinforced by the <a class="reference external" href="http://www.python.org/dev/peps/pep-0020/">Zen of Python</a> guiding principles of beauty, simplicity, and
+	   		  readability. Python is particularly appropriate for this text because its broad
+	   		  set of features support a variety of different programming styles, which we will
+	   		  explore. While there is no single way to program in Python, there are a set of
+	   		  conventions shared across the developer community that facilitate reading,
+	   		  understanding, and extending existing programs. Python's combination of great
+	   		  flexibility and accessibility allows students to explore many programming
+	   		  paradigms, and then apply their newly acquired knowledge to thousands of
+	   		  <a class="reference external" href="http://pypi.python.org/pypi">ongoing projects</a>.</p>
+	   		  <p>These notes maintain the spirit of <a class="reference external" href="http://mitpress.mit.edu/sicp">SICP</a> by introducing the features of Python
+	   		  in step with techniques for abstraction and a rigorous model of computation. In
+	   		  addition, these notes provide a practical introduction to Python programming,
+	   		  including some advanced language features and illustrative examples. Increasing
+	   		  your facility Python should come naturally as you progress through the text.</p>
+	   		  <p>The best way to get started programming in Python is to interact with the
+	   		  interpreter directly. This section describes how to install Python 3, initiate
+	   		  an interactive session with the interpreter, and start programming.</p>
+	   		  </div> 
+         </div>
+     </div>
+     
+</section>
+
+</div>
+
+
+
+ 
+</div>
+
+<footer class="footer">
+
+<div class="post-date">
+	<a >MIT License | Connected Learning Initiative, CIER, TISS
+        <span class="copyright">
+    &copy; 2019
+       </span>
+	</a>
+
+</div>
+</footer>
+
