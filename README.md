@@ -1,4 +1,4 @@
-# DataConscientious
+# Clix Data Visualisation
 
-A website for DataConscientious Consultancy LLP created using Millenium theme from GitHub website themes.
+A website is created using Millenium theme from GitHub website themes.
 
