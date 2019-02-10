@@ -1,61 +1,4 @@
----
-layout: projectpages
-title: "Total Number of Days Accessed"
-author: "partha"
-categories: visuals
-caption: Total number of days tools section of platform is accessed
-tags: [tools, total_number_of_days]
-image:
-      feature : pest_project1.png
----
 
-<p>
-This chart gives us the sense of number of days platform is accessed by students during our period of observation. 
-Each bar corresponds to a school and we have number of days on y-axis. Different colors correspond to different tools.
-</p>
-<!--helped by: http://bl.ocks.org/yuuniverse4444/8325617-->
-<meta charset="utf-8">
-<style>
-
-body {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.bar {
-  fill: steelblue;
-}
-
-.x.axis path {
-  display: none;
-}
-
-.tooltip{
-  text-anchor: middle;
-  font-family: sans-serif;
-  font-size: 10px;
-  font-weight: bold;
-  fill:black;
-}
-
-</style>
-<script type="text/javascript"
-src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.13/d3.min.js">
-</script>
-
-<script type="text/javascript">
-{% include all_states_number_of_days_d3.js %}
-
-</script>
-
-
-<!--
 var margin = {top: 20, right: 20, bottom: 80, left: 40},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -94,7 +37,7 @@ var legendClicked; //to control legend selections
 var legendClassArray = []; //store legend classes to select bars in plotSingle()
 var y_orig; //to store original y-posn
 
-d3.csv("data/all_states_num_days_viz_top50.csv", function(error, data) {
+d3.csv("/data/all_states_num_days_viz_top50.csv", function(error, data) {
   if (error) throw error;
 
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "school_server_code"; }));
@@ -320,7 +263,6 @@ d3.csv("data/all_states_num_days_viz_top50.csv", function(error, data) {
           .style("opacity", 0);
       }
     }
-
     //lower the bars to start on x-axis
     y_orig = [];
     state.selectAll("rect").forEach(function (d, i) {
@@ -351,5 +293,3 @@ d3.csv("data/all_states_num_days_viz_top50.csv", function(error, data) {
 
 });
 
-</script>
--->
